@@ -1,0 +1,135 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+  height: 696px;
+  width: 450px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+}
+.card_body {
+  padding: 48px;
+  padding-top: 40px;
+}
+.card_body h1 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 900;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+.card_body p {
+  text-align: center;
+  line-height: 1.6;
+  color: hsl(224, 23%, 55%);
+}
+.card_body .annualPlan {
+  display: flex;
+  justify-content: space-between;
+  height: 98px;
+  border-radius: 14px;
+  padding: 25px;
+  background-color: hsl(225, 100%, 98%);
+}
+.card_body .annualPlan_info {
+  display: flex;
+}
+.card_body .annualPlan_info_price {
+  padding-left: 12px;
+}
+.card_body .annualPlan_info_price .pricePlan {
+  margin: 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.card_body .annualPlan_info_price .priceNumber {
+  margin: 0;
+}
+.card_body .annualPlan_changePlanButton {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline;
+  font-family: inherit;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  background: none;
+  padding: 0;
+  outline: inherit;
+}
+.card_body .proceedButton {
+  display: block;
+  margin: 34px;
+  margin-left: 0;
+  width: 100%;
+  height: 49px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  outline: inherit;
+  padding: 0;
+  box-shadow: 0 10px 20px hsla(245, 75%, 52%, 0.3);
+}
+.card_body .cancelButton {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  background: none;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  outline: inherit;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */
