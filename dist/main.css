@@ -46,6 +46,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   text-align: center;
+  box-shadow: 0 15px 20px hsla(245, 75%, 52%, 0.1);
 }
 .card_body {
   padding: 48px;
@@ -98,6 +99,9 @@ body {
   padding: 0;
   outline: inherit;
 }
+.card_body .annualPlan_changePlanButton:hover {
+  color: hsl(245, 72%, 65%);
+}
 .card_body .proceedButton {
   display: block;
   margin: 34px;
@@ -118,6 +122,9 @@ body {
   padding: 0;
   box-shadow: 0 10px 20px hsla(245, 75%, 52%, 0.3);
 }
+.card_body .proceedButton:hover {
+  background-color: hsl(245, 72%, 65%);
+}
 .card_body .cancelButton {
   display: inline-block;
   border: none;
@@ -132,4 +139,50 @@ body {
   text-decoration: none;
   outline: inherit;
   padding: 0;
+}
+.card_body .cancelButton:hover {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    height: 567px;
+    width: 327px;
+    border-radius: 22px;
+  }
+  .card_image img {
+    height: 160px;
+  }
+  .card_body {
+    padding: 24px;
+    padding-top: 26px;
+  }
+  .card_body h1 {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .card_body p {
+    line-height: 1.8;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  .card_body .annualPlan {
+    height: 81px;
+    border-radius: 14px;
+    padding: 15px;
+  }
+  .card_body .annualPlan .pricePlan {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+  }
+  .card_body .annualPlan .priceNumber {
+    font-size: 14px;
+  }
+  .card_body .proceedButton {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
